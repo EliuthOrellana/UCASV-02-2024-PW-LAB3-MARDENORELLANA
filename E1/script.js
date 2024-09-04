@@ -1,9 +1,11 @@
 const countVotes = (votos)=>{
-
+let resultado=[];
  votos.forEach(votos =>{
-    let resultado=[];
+    
         resultado[votos.candidate]=(resultado[votos.candidate]|| 0) +1;
     })
+
+    return resultado;
 
 }
 const showResults = (result)=>{
